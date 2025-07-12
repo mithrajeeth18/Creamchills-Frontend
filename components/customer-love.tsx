@@ -44,7 +44,7 @@ const instagramPosts = [
 
 export function CustomerLove() {
   const [activeTab, setActiveTab] = useState("reviews")
-
+//{""}
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -53,7 +53,7 @@ export function CustomerLove() {
             Customer <span className="text-blue-500">Love</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it - hear what our amazing customers have to say!
+            {"Don't just take our word for it - hear what our amazing customers have to say!"}
           </p>
         </div>
 

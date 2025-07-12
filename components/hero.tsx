@@ -42,8 +42,7 @@ export function Hero() {
               <span className="text-gray-800">Try One!</span>
             </h1>
             <p className="text-base sm:text-lg text-gray-600 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              Since 1998, we've been delighting kids and adults with fantastic, irresistible & mouth-watering ice
-              creams, desserts, and a friendly atmosphere that makes everyone feel right at home.
+             {" Since 1998, we've been delighting kids and adults with fantastic, irresistible & mouth-watering ice creams, desserts, and a friendly atmosphere that makes everyone feel right at home."}
             </p>
           </div>
 

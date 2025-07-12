@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail, Clock } from "lucide-react"
-
+import Image from "next/image"
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
@@ -12,8 +12,13 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Link href="/" className="flex items-center space-x-2">
-            <img src="/logo.png" alt="logo" className="ml-12 w-45 h-20"/>
-            
+           <Image
+    src="/logo.png"
+    alt="logo"
+    width={180} // actual pixel width of your logo
+    height={80} // actual pixel height
+    className="ml-12"
+  /> 
           </Link>
             </div>
             <p className="text-gray-400 leading-relaxed">

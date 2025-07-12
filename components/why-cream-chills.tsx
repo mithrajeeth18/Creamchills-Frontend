@@ -39,8 +39,7 @@ export function WhyCreamChills() {
             Why Choose <span className="text-green-500">Cream Chills?</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Since 1998, we've been your friendly neighbourhood ice cream café, creating wonderful memories with
-            fantastic, irresistible treats that make everyone feel right at home.
+           {"Since 1998, we've been your friendly neighbourhood ice cream café, creating wonderful memories with fantastic, irresistible treats that make everyone feel right at home."} 
           </p>
         </div>
 
@@ -70,9 +69,7 @@ export function WhyCreamChills() {
                 Our Story: From 1998 to <span className="text-pink-500">Today</span>
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Since 1998, Cream Chills has been delighting kids and adults of all ages with fantastic, irresistible &
-                mouth-watering ice creams, desserts, and a friendly atmosphere. We've helped countless customers make
-                wonderful memories across Mumbai and surrounding areas.
+                {"Since 1998, Cream Chills has been delighting kids and adults of all ages with fantastic, irresistible & mouth-watering ice creams, desserts, and a friendly atmosphere. We've helped countless customers make wonderful memories across Mumbai and surrounding areas."}
               </p>
               <p className="text-gray-600 leading-relaxed">
                 We churn our ice cream in small batches, ten gallons or less at a time. That micro-batch process allows

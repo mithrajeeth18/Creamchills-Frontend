@@ -41,8 +41,7 @@ export function LocationsSection() {
             Find Your Nearest <span className="text-blue-500">Cream Chills</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Visit any of our welcoming locations for the full Cream Chills experience. Each store offers the same
-            premium quality with its own unique charm.
+           {"Visit any of our welcoming locations for the full Cream Chills experience. Each store offers the same premium quality with its own unique charm."} 
           </p>
         </div>
 
@@ -113,8 +112,7 @@ export function LocationsSection() {
         <div className="bg-green-500 rounded-3xl p-8 lg:p-12 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">Can't Find a Location Near You?</h3>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            We're always expanding! Use our store locator to find the closest Cream Chills or get notified when we open
-            in your area.
+          {"We're always expanding! Use our store locator to find the closest Cream Chills or get notified when we open in your area."}  
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

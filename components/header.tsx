@@ -24,10 +24,13 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-26">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <img src="/logo.png" alt="logo" className="w-45 h-22"/>
-            
-          </Link>
+           <Image
+        src="/logo.png"
+        alt="logo"
+        width={180}   // replace with your actual logo pixel width
+        height={88}   // replace with your actual logo pixel height
+        className="ml-4"
+      />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8 font-semibold">
