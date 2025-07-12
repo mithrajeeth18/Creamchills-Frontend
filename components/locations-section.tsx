@@ -1,34 +1,61 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, Clock, Phone, Navigation } from "lucide-react"
-
+import Image from "next/image"
 const locations = [
   {
     id: 1,
-    name: "Downtown Flagship",
-    address: "123 Main Street, Downtown",
-    phone: "(555) 123-4567",
-    hours: "Mon-Sun: 10AM - 10PM",
+    name: "Mulund East - Flagship",
+    address: "Maruti Darshan Soc Ltd, Shop 15, Hanuman Chowk, Navghar Road, Mulund (E) 400081",
+    phone: "022-25638837",
+    hours: "Daily: 11AM - 11PM",
     image: "/placeholder.svg?height=200&width=300",
     isNew: false,
   },
   {
     id: 2,
-    name: "Westside Family Store",
-    address: "456 Oak Avenue, Westside",
-    phone: "(555) 234-5678",
-    hours: "Mon-Sun: 11AM - 9PM",
+    name: "Thane West",
+    address: "Prasad Building, Shop 1, Gadkari Road, Ram Maruti Road, Thane West",
+    phone: "022-25428766",
+    hours: "Daily: 11AM - 11PM",
     image: "/placeholder.svg?height=200&width=300",
     isNew: false,
   },
   {
     id: 3,
-    name: "Eastside Express",
-    address: "789 Pine Road, Eastside",
-    phone: "(555) 345-6789",
-    hours: "Mon-Sun: 12PM - 8PM",
+    name: "Airoli, Navi Mumbai",
+    address: "Shop 29, Intop Heights, Sector 19, Airoli, Navi Mumbai",
+    phone: "022-27797638",
+    hours: "Daily: 11AM - 10PM",
+    image: "/placeholder.svg?height=200&width=300",
+    isNew: false,
+  },
+  {
+    id: 4,
+    name: "Dombivli East",
+    address: "Xperia Mall, Kiosk 1, Food Court, Dombivli East",
+    phone: "7506345987",
+    hours: "Mall Hours: 11AM - 10PM",
     image: "/placeholder.svg?height=200&width=300",
     isNew: true,
+  },
+  {
+    id: 5,
+    name: "Panvel",
+    address: "Shop 1, Plot 41/42, Giriraj Enclave, Sector 20, Roadpali, Kalamboli, Panvel 410218",
+    phone: "9820985022",
+    hours: "Daily: 11AM - 10PM",
+    image: "/placeholder.svg?height=200&width=300",
+    isNew: false,
+  },
+  {
+    id: 6,
+    name: "Kharghar",
+    address: "Shop 1, Sai Shusti, Plot 15, Shilp Chowk, Sector 20, Kharghar 410210",
+    phone: "022-27747799",
+    hours: "Daily: 11AM - 10PM",
+    image: "/placeholder.svg?height=200&width=300",
+    isNew: false,
   },
 ]
 
@@ -52,12 +79,13 @@ export function LocationsSection() {
               className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg overflow-hidden"
             >
               <CardContent className="p-0">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={location.image || "/placeholder.svg"}
-                    alt={location.name}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
+                <div className="relative h-48 overflow-hidden">
+                 <Image
+    src={location.image || "/placeholder.svg"}
+    alt={location.name}
+    fill
+    className="object-cover group-hover:scale-110 transition-transform duration-300"
+  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
 
                   {location.isNew && (
@@ -110,7 +138,7 @@ export function LocationsSection() {
 
         {/* Store Locator CTA */}
         <div className="bg-green-500 rounded-3xl p-8 lg:p-12 text-center text-white">
-          <h3 className="text-3xl font-bold mb-4">Can't Find a Location Near You?</h3>
+          <h3 className="text-3xl font-bold mb-4">{ "Can't Find a Location Near You?"}</h3>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
           {"We're always expanding! Use our store locator to find the closest Cream Chills or get notified when we open in your area."}  
           </p>
